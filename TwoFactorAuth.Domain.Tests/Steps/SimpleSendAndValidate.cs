@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using NUnit.Framework;
 using TechTalk.SpecFlow;
 using TwoFactorAuth.Domain.Tests.Helpers;
 using Assert = NUnit.Framework.Assert;

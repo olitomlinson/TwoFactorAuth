@@ -26,7 +26,10 @@ namespace TwoFactorAuth.Domain
             switch (activeCodes.Count)
             {
                 case 0:
-                    _couldNotFindAnActiveCode(new CodeClassificationResult() {InactiveCodes = inactiveCodes});
+                    _couldNotFindAnActiveCode(new CodeClassificationResult()
+                    {
+                        InactiveCodes = inactiveCodes
+                    });
                     return;
                 case 1:
                     _activeCodeFound(new CodeClassificationResult()
