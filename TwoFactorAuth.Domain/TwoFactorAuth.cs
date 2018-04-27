@@ -1,7 +1,8 @@
 ﻿using System;
-using TwoFactorAuth.Domain.Data.Command;
-using TwoFactorAuth.Domain.Data.Query;
-using TwoFactorAuth.Domain.Models;
+using TwoFactorAuth.Domain.Extensions;
+using TwoFactorAuth.Domain.Interfaces.Data.Command;
+using TwoFactorAuth.Domain.Interfaces.Data.Query;
+using TwoFactorAuth.Domain.Interfaces.Models;
 
 namespace TwoFactorAuth.Domain
 {

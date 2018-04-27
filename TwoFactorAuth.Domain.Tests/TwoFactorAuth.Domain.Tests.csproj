@@ -96,6 +96,7 @@
     <Compile Include="Mocks\InsertActiveCodeCommandInMemoryMock.cs" />
     <Compile Include="Mocks\MockSendCodeService.cs" />
     <Compile Include="Mocks\UnconsumedCodeQueryInMemoryMock.cs" />
+    <Compile Include="Mocks\UpdateActiveCodeCommandInMemoryMock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Mocks\MockCodeGenerator.cs" />
     <Compile Include="Mocks\UpdateMatchedCodeAsConsumedInMemoryMock.cs" />
@@ -139,6 +140,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TwoFactorAuth.Domain.Interfaces\TwoFactorAuth.Domain.Interfaces.csproj">
+      <Project>{64E11333-905A-4A94-A03A-2A12CB31EB4B}</Project>
+      <Name>TwoFactorAuth.Domain.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TwoFactorAuth.Domain\TwoFactorAuth.Domain.csproj">
       <Project>{4C104BC7-C18D-4E2F-9B87-6C60D1145524}</Project>
       <Name>TwoFactorAuth.Domain</Name>

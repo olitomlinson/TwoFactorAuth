@@ -1,6 +1,6 @@
-using TwoFactorAuth.Domain.Models;
+using TwoFactorAuth.Domain.Interfaces.Models;
 
-namespace TwoFactorAuth.Domain.Data.Command
+namespace TwoFactorAuth.Domain.Interfaces.Data.Command
 {
     public interface IInsertActiveCodeCommand
     {

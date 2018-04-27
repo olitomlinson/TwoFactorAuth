@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TwoFactorAuth.Domain.Models
+﻿namespace TwoFactorAuth.Domain.Interfaces.Models
 {
     public class ActiveCode : UnconsumedCode
     {

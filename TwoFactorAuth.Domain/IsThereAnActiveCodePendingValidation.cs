@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using TwoFactorAuth.Domain.Models;
+using TwoFactorAuth.Domain.Extensions;
+using TwoFactorAuth.Domain.Interfaces.Models;
 
 namespace TwoFactorAuth.Domain
 {

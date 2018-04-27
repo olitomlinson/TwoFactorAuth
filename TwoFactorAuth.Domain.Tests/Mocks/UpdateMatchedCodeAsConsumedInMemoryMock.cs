@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using System.Linq;
-using TwoFactorAuth.Domain.Data.Command;
-using TwoFactorAuth.Domain.Models;
+using TwoFactorAuth.Domain.Interfaces.Data.Command;
+using TwoFactorAuth.Domain.Interfaces.Models;
 
 namespace TwoFactorAuth.Domain.Tests.Mocks
 {

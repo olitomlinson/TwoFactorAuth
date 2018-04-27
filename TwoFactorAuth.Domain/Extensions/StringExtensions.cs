@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace TwoFactorAuth.Domain
+namespace TwoFactorAuth.Domain.Extensions
 {
-    public static class stringExtensions
+    public static class StringExtensions
     {
         public static void Times(this int count, Action action)
         {

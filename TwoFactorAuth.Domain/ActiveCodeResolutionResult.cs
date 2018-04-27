@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using TwoFactorAuth.Domain.Models;
+using TwoFactorAuth.Domain.Interfaces.Models;
 
 namespace TwoFactorAuth.Domain
 {

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
-using TwoFactorAuth.Domain.Models;
+using TwoFactorAuth.Domain.Interfaces.Data.Query;
+using TwoFactorAuth.Domain.Interfaces.Models;
 
 namespace TwoFactorAuth.Domain.Data.Query
 {

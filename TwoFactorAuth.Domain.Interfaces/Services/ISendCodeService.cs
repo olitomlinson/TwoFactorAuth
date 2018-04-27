@@ -1,4 +1,4 @@
-﻿using TwoFactorAuth.Domain.Models;
+﻿using TwoFactorAuth.Domain.Interfaces.Models;
 
 namespace TwoFactorAuth.Domain
 {

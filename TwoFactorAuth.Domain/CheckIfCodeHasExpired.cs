@@ -1,5 +1,6 @@
 using System;
-using TwoFactorAuth.Domain.Models;
+using TwoFactorAuth.Domain.Extensions;
+using TwoFactorAuth.Domain.Interfaces.Models;
 
 namespace TwoFactorAuth.Domain
 {

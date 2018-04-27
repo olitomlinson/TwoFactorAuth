@@ -1,6 +1,6 @@
-using TwoFactorAuth.Domain.Models;
+using TwoFactorAuth.Domain.Interfaces.Models;
 
-namespace TwoFactorAuth.Domain.ModelExtensions
+namespace TwoFactorAuth.Domain.Extensions
 {
     public static class ActiveCodeExtensions
     {

@@ -41,37 +41,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\Command\InsertActiveCodeCommand.cs" />
-    <Compile Include="FunctionalExtensions.cs" />
-    <Compile Include="Models\ActiveCode.cs" />
+    <Compile Include="Extensions\FunctionalExtensions.cs" />
     <Compile Include="ActiveCodeResolutionResult.cs" />
     <Compile Include="IsThereAnActiveCodePendingValidation.cs" />
-    <Compile Include="ModelExtensions\ActiveCodeExtensions.cs" />
-    <Compile Include="Models\InactiveCode.cs" />
-    <Compile Include="Models\Code.cs" />
+    <Compile Include="Extensions\ActiveCodeExtensions.cs" />
     <Compile Include="CodeGenerator.cs" />
     <Compile Include="CodePolicy.cs" />
     <Compile Include="CompareTheActiveAndSuppliedCode.cs" />
-    <Compile Include="Data\Command\UpdateMatchedCodeAsConsumed.cs" />
     <Compile Include="ICodeGenerator.cs" />
-    <Compile Include="Data\Command\IUpdateMatchedCodeAsConsumed.cs" />
-    <Compile Include="Data\Command\IInsertActiveCodeCommand.cs" />
-    <Compile Include="Models\UnmatchedCode.cs" />
-    <Compile Include="ModelExtensions\UnconsumedCodeExtensions.cs" />
-    <Compile Include="ISendCodeService.cs" />
+    <Compile Include="Extensions\UnconsumedCodeExtensions.cs" />
     <Compile Include="CheckIfCodeHasExpired.cs" />
-    <Compile Include="Data\Query\IUnconsumedCodeQuery.cs" />
-    <Compile Include="Models\MatchedCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Result.cs" />
     <Compile Include="SentCode.cs" />
-    <Compile Include="Services\SendCodeService.cs" />
-    <Compile Include="stringExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="SystemTime.cs" />
     <Compile Include="TwoFactorAuth.cs" />
-    <Compile Include="Models\UnconsumedCode.cs" />
-    <Compile Include="Models\UnclassifiableCode.cs" />
-    <Compile Include="Data\Query\UnconsumedCodeQuery.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TwoFactorAuth.Domain.Interfaces\TwoFactorAuth.Domain.Interfaces.csproj">
+      <Project>{64e11333-905a-4a94-a03a-2a12cb31eb4b}</Project>
+      <Name>TwoFactorAuth.Domain.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,4 +1,4 @@
-namespace TwoFactorAuth.Domain.Models
+namespace TwoFactorAuth.Domain.Interfaces.Models
 {
     public class UnmatchedCode : ActiveCode
     {
