@@ -1,4 +1,4 @@
-using TwoFactorAuth.Domain.Core;
+using TwoFactorAuth.Domain;
 
 namespace TwoFactorAuth.Domain.Tests.Steps
 {

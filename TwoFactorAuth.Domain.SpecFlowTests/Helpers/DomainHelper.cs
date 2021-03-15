@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using TwoFactorAuth.Domain.Tests.mocks;
 using TwoFactorAuth.Domain.Tests.Mocks;
 using TwoFactorAuth.Domain.Tests.Steps;
-using TwoFactorAuth.Domain.Core;
+using TwoFactorAuth.Domain;
 
 namespace TwoFactorAuth.Domain.Tests.Helpers
 {
@@ -12,7 +12,7 @@ namespace TwoFactorAuth.Domain.Tests.Helpers
         public static MockCodeGenerator MockCodeGenerator;
         public static MockSendCodeService MockSendCodeService;
 
-        public static Core.TwoFactorAuth Create()
+        public static TwoFactorAuth Create()
         {
             var insertActiveCodeCommand = new InsertActiveCodeCommandInMemoryMock(State);
             MockCodeGenerator = new MockCodeGenerator(new CodeGenerator());
@@ -22,7 +22,7 @@ namespace TwoFactorAuth.Domain.Tests.Helpers
             var updateActiveCodeCommand = new UpdateActiveCodeCommandInMemoryMock(State);
             var updateInactiveCodeAsConsumed = new UpdateInactiveCodeAsConsumedInMemoryMock(State);
 
-            return new Core.TwoFactorAuth(insertActiveCodeCommand,
+            return new TwoFactorAuth(insertActiveCodeCommand,
                 unconsumedCodeQueryInMemory,
                 MockSendCodeService,
                 MockCodeGenerator,

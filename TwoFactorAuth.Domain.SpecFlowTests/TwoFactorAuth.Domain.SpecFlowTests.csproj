@@ -31,8 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TwoFactorAuth.Domain.Core.Interfaces\TwoFactorAuth.Domain.Core.Interfaces.csproj" />
-    <ProjectReference Include="..\TwoFactorAuth.Domain.Core\TwoFactorAuth.Domain.Core.csproj" />
+    <ProjectReference Include="..\TwoFactorAuth.Domain.Interfaces\TwoFactorAuth.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\TwoFactorAuth.Domain\TwoFactorAuth.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using TwoFactorAuth.Domain.Core;
+using TwoFactorAuth.Domain;
 using TwoFactorAuth.Domain.Tests.Steps;
 
 namespace TwoFactorAuth.Domain.Tests.Helpers

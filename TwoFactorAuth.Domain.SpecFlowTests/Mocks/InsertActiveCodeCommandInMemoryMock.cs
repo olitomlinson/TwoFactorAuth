@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using TwoFactorAuth.Domain.Core.Interfaces.Data.Command;
-using TwoFactorAuth.Domain.Core.Interfaces.Models;
+using TwoFactorAuth.Domain.Interfaces.Data.Command;
+using TwoFactorAuth.Domain.Interfaces.Models;
 using TwoFactorAuth.Domain.Tests.Mocks;
 
 namespace TwoFactorAuth.Domain.Tests.mocks

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using TechTalk.SpecFlow;
-using TwoFactorAuth.Domain.Core;
+using TwoFactorAuth.Domain;
 using TwoFactorAuth.Domain.Tests.Helpers;
 using Assert = NUnit.Framework.Assert;
 
