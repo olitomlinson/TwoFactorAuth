@@ -21,7 +21,6 @@ namespace TwoFactorAuth.Domain.Tests.Mocks
             code.AuthCode = inactiveCode.AuthCode;
             code.FailedAttemptLimit = inactiveCode.FailedAttemptLimit;
             code.FailedAttempts = inactiveCode.FailedAttempts;
-            code.IsConsumed = true;
         }
     }
 }

@@ -26,8 +26,7 @@ namespace TwoFactorAuth.Domain.Tests.mocks
                 RequestedOn = activeCode.RequestedOn,
                 ExpiresOn = activeCode.ExpiresOn,
                 FailedAttemptLimit = activeCode.FailedAttemptLimit,
-                FailedAttempts = activeCode.FailedAttempts,
-                IsConsumed = false
+                FailedAttempts = activeCode.FailedAttempts
             });
         }
     }

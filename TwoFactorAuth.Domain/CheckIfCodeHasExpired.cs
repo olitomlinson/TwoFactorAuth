@@ -30,7 +30,5 @@ namespace TwoFactorAuth.Domain
                 _codeIsInactive(unconsumedCode.ToInactiveCode());
             }
         }
-
-
     }
 }

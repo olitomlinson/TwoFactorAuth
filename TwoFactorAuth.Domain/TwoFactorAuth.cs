@@ -15,7 +15,6 @@ namespace TwoFactorAuth.Domain
         private readonly IUpdateMatchedCodeAsConsumed _updateMatchedCodeAsConsumed;
         private readonly IUpdateActiveCodeCommand _updateActiveCodeCommand;
         private readonly IUpdateInactiveCodeAsConsumed _updateInactiveCodeAsConsumed;
-        private readonly Action<UnconsumedCode, Action<ActiveCode>, Action<InactiveCode>> _checkCodeHasExpired;
 
         public TwoFactorAuth(IInsertActiveCodeCommand insertActiveCodeCommand, 
             IUnconsumedCodeQuery unconsumedCodeQuery, 

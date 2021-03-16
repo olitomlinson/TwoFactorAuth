@@ -19,7 +19,7 @@ namespace TwoFactorAuth.Domain.Tests.Mocks
 
             code.MatchedSuccessfully = matchedCode.MatchedSuccessfully;
             code.MatchedSuccessfullyOn = matchedCode.MatchedSuccessfullyOn;
-            code.IsConsumed = true;
+            code.IsConsumed = matchedCode.IsConsumed;
         }
     }
 }

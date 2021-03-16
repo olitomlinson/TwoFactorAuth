@@ -4,7 +4,12 @@
     <AzureFunctionsVersion>v3</AzureFunctionsVersion>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="2.4.1" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.11" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TwoFactorAuth.Domain.Interfaces\TwoFactorAuth.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\TwoFactorAuth.Domain\TwoFactorAuth.Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">
