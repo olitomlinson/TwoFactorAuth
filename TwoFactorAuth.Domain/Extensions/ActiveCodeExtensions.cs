@@ -17,6 +17,8 @@ namespace TwoFactorAuth.Domain.Extensions
                 PhoneNumber = activeCode.PhoneNumber,
                 MatchedSuccessfully = true,
                 MatchedSuccessfullyOn = SystemTime.Now(),
+                RequestedOn = activeCode.RequestedOn,
+                IsConsumed = true
             };
         }
 
@@ -31,6 +33,7 @@ namespace TwoFactorAuth.Domain.Extensions
                 FailedAttempts = ++activeCode.FailedAttempts,
                 FailedAttemptLimit = activeCode.FailedAttemptLimit,
                 PhoneNumber = activeCode.PhoneNumber,
+                RequestedOn = activeCode.RequestedOn,
             };
         }
     }

@@ -15,7 +15,8 @@ namespace TwoFactorAuth.Domain.Extensions
                 FailedAttemptLimit = unconsumedCode.FailedAttemptLimit,
                 FailedAttempts = unconsumedCode.FailedAttempts,
                 PhoneNumber = unconsumedCode.PhoneNumber,
-                RequestedOn = unconsumedCode.RequestedOn
+                RequestedOn = unconsumedCode.RequestedOn,
+                IsConsumed = true
             };
         }
 

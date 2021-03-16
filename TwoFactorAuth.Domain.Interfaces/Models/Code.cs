@@ -2,7 +2,7 @@
 
 namespace TwoFactorAuth.Domain.Interfaces.Models
 {
-    public abstract class Code
+    public class Code
     {
         public Guid Id { get; set; }
         public string AuthCode { get; set; }
